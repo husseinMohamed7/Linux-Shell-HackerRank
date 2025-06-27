@@ -78,3 +78,23 @@ if [[ "$char" == "Y" || "$char" == "y" ]]; then
 elif [[ "$char" == "N" || "$char" == "n" ]]; then
   echo NO
 fi
+
+#006- More on Conditionals
+<< Description.
+Given three integers (x, y , z and ) representing the three sides of a triangle, identify whether the triangle is scalene, isosceles, or equilateral.
+If all three sides are equal, output EQUILATERAL.
+Otherwise, if any two sides are equal, output ISOSCELES.
+Otherwise, output SCALENE.
+Description.
+
+read x
+read y
+read z
+
+if [[ "$x" == "$y" && "$y" == "$z" ]]; then
+    echo "EQUILATERAL"
+elif [[ "$x" == "$y" || "$x" == "$z" || "$y" == "$z" ]]; then
+    echo "ISOSCELES"
+else
+    echo "SCALENE"
+fi
