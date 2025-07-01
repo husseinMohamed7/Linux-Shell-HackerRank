@@ -42,7 +42,7 @@ for ((i=1;i<=50;i++))
     echo "$i"
   done
 
-#004- The World of Numbers
+#005- The World of Numbers
 << Description.
 do +, -, *, / to the two inputed numbes. 
 Description.
@@ -58,7 +58,7 @@ echo "$differance"
 echo "$product"
 echo "$quotient"
 
-#005- Getting started with conditionals
+#006- Getting started with conditionals
 << Description.
 Read in one character from STDIN.
 If the character is 'Y' or 'y' display "YES".
@@ -79,7 +79,7 @@ elif [[ "$char" == "N" || "$char" == "n" ]]; then
   echo NO
 fi
 
-#006- More on Conditionals
+#007- More on Conditionals
 << Description.
 Given three integers (x, y , z and ) representing the three sides of a triangle, identify whether the triangle is scalene, isosceles, or equilateral.
 If all three sides are equal, output EQUILATERAL.
@@ -97,4 +97,24 @@ elif [[ "$x" == "$y" || "$x" == "$z" || "$y" == "$z" ]]; then
     echo "ISOSCELES"
 else
     echo "SCALENE"
+fi
+
+#008- Comparing Numbers
+<< Description.
+Given two integers, X and Y, identify whether X > Y or X < Y or X = Y.
+Exactly one of the following lines:
+- X is less than Y
+- X is greater than Y
+- X is equal to Y
+Description.
+
+read X
+read Y
+
+if ((X < Y)); then
+    echo "X is less than Y"
+elif ((X > Y)); then 
+    echo "X is greater than Y"
+else
+    echo "X is equal to Y"
 fi
