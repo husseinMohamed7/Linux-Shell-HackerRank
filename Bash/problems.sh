@@ -1,15 +1,17 @@
 #001- Let's echo
-<< Description
+: '
+Description:
 Write a bash script that prints the string "HELLO".
-Description
+'
 
 echo "HELLO"
 
 #002- Looping and Skipping
-<< Description.
+: '
+Description:
 Your task is to use for loops
 to display only odd natural numbers from 1 to 99
-Description.
+'
 
 for ((i=1; i<100; i++))
 do
@@ -20,15 +22,15 @@ do
 done
 
 #003- A Personalized Echo
-<< Description.
-Write a Bash script which accepts name as input and displays the greeting "Welcome (name)"
+: '
+Description:
+Write a Bash script which accepts nam<< e as input and displays the greeting "Welcome (name)"
 Input Format
 There is one line of text, name.
 Output Format
 One line: "Welcome (name)" (quotation marks excluded).
 The evaluation will be case-sensitive.
-Description.
-
+'
 read name
 echo "Welcome $name"
 
@@ -43,9 +45,10 @@ for ((i=1;i<=50;i++))
   done
 
 #005- The World of Numbers
-<< Description.
+: '
+Description:
 do +, -, *, / to the two inputed numbes. 
-Description.
+'
 
 read x
 read y
@@ -59,7 +62,8 @@ echo "$product"
 echo "$quotient"
 
 #006- Getting started with conditionals
-<< Description.
+: ' 
+Description:
 Read in one character from STDIN.
 If the character is 'Y' or 'y' display "YES".
 If the character is 'N' or 'n' display "NO".
@@ -70,7 +74,7 @@ Constraints
 The character will be from the set .
 Output Format
 echo YES or NO to STDOUT.
-Description.
+'
 
 read char
 if [[ "$char" == "Y" || "$char" == "y" ]]; then
@@ -80,12 +84,13 @@ elif [[ "$char" == "N" || "$char" == "n" ]]; then
 fi
 
 #007- More on Conditionals
-<< Description.
+: '
+Description:
 Given three integers (x, y , z and ) representing the three sides of a triangle, identify whether the triangle is scalene, isosceles, or equilateral.
 If all three sides are equal, output EQUILATERAL.
 Otherwise, if any two sides are equal, output ISOSCELES.
 Otherwise, output SCALENE.
-Description.
+'
 
 read x
 read y
@@ -100,13 +105,14 @@ else
 fi
 
 #008- Comparing Numbers
-<< Description.
+: '
+Description:
 Given two integers, X and Y, identify whether X > Y or X < Y or X = Y.
 Exactly one of the following lines:
 - X is less than Y
 - X is greater than Y
 - X is equal to Y
-Description.
+'
 
 read X
 read Y
